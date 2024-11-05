@@ -2,7 +2,7 @@
 
 <footer class="main-footer">
   <div class="footer-left">
-    Copyright &copy; 2021 <div class="bullet"></div>Development By <a href="https://nauval.in/">IOT Rafy & Ilyas</a>
+    Copyright &copy; 2024 <div class="bullet"></div>Development By <a href="https://github.com/savanzscode">Cristian Michael Halim</a>
   </div>
 
 </footer>

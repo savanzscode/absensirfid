@@ -32,7 +32,7 @@
 					<td>{{$item->nama}}</td>
 					<td>{{$item->email}}</td>
 					<td>{{$item->jabatan}}</td>
-					<td class="text-center"><a href="{{url('/edit-karyawan/'.$item->id.'')}}" class="btn btn-warning">Edit</a> 
+					<td class="text-center"><a href="{{url('/edit-karyawan/'.$item->id.'')}}" class="btn btn-warning">Edit</a>
 					<a href="{{url('/hapus-karyawan/'.$item->id.'')}}" class="btn btn-danger confirm">Hapus</a>
 						</form>
 					</td>

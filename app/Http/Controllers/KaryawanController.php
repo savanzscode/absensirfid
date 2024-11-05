@@ -14,7 +14,7 @@ class KaryawanController extends Controller
      */
     public function index()
     {
-     
+
         $data = Karyawan::All();
         return view('karyawan.index', compact('data'));
     }
@@ -33,8 +33,8 @@ class KaryawanController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+    //  * @param  \Illuminate\Http\Request  $request
+    //  * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -47,7 +47,7 @@ class KaryawanController extends Controller
         ]);
          $delete = \DB::table('temp_rfid')->delete();
 
-        return redirect('/karyawan')->with('success', 'Data Berhasil Ditambahkan !!');  
+        return redirect()->route('home')->with('success', 'Data Berhasil Ditambahkan !!');
     }
 
     /**
@@ -64,8 +64,8 @@ class KaryawanController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Karyawan  $karyawan
-     * @return \Illuminate\Http\Response
+    //  * @param  \App\Models\Karyawan  $karyawan
+    //  * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
@@ -89,7 +89,7 @@ class KaryawanController extends Controller
           'jabatan' => $request->input('jabatan'),
       ]);
 
-        return redirect('/karyawan')->with('success', 'Data Berhasil Diedit !!');  
+        return redirect('/karyawan')->with('success', 'Data Berhasil Diedit !!');
     }
 
     /**
@@ -101,6 +101,6 @@ class KaryawanController extends Controller
     public function destroy($id)
     {
      $data = Karyawan::where('id', $id)->delete();
-      return redirect('/karyawan')->with('success', 'Data Berhasil Dihapus !!');  
+      return redirect('/karyawan')->with('success', 'Data Berhasil Dihapus !!');
     }
 }

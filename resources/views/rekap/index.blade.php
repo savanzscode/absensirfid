@@ -21,7 +21,7 @@
 				<tr>
 					<td>{{$loop->iteration}}</td>
 					<td>{{$item->uid}}</td>
-					<td>{{$item->Karyawan['nama']}}</td>
+					<td>{{$item->karyawan['nama']}}</td>
 					<td>{{$item->tanggal}}</td>
 					<td>{{$item->jam_masuk}}</td>
 					<td>{{$item->jam_pulang}}</td>
